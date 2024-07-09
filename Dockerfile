@@ -8,7 +8,7 @@ RUN go mod download
 
 COPY *.go ./
 
-ENV  CGO_ENABLED=0 GOOS=linux GOARCH=amd64
+ENV  CGO_ENABLED=1 GOOS=linux GOARCH=amd64
 
 RUN go build -o /todo_app
 
