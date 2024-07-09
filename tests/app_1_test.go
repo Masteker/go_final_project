@@ -10,9 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/joho/godotenv"
 	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 )
 
 func getURL(path string) string {
@@ -58,8 +56,6 @@ func walkDir(path string, f func(fname string) error) error {
 }
 
 func TestApp(t *testing.T) {
-	err := godotenv.Load("../.env")
-	require.NoError(t, err)
 	cmp := func(fname string) error {
 		fbody, err := os.ReadFile(fname)
 		if err != nil {
