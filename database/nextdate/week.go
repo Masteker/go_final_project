@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-// calcW возвращает следующую дату или ошибку, исходя из правила repeat "w"
+// CalculateNextDateAfterWeek возвращает следующую дату или ошибку, исходя из правила repeat "w"
 func CalculateNextDateAfterWeek(code string) (string, error) {
 	var days int
 	targetWDs, err := listAtoi(strings.Split(code, ","))
