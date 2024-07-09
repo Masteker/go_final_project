@@ -72,7 +72,7 @@ func InstallDB() error {
 		return err
 	}
 	defer db.Close()
-	installQuery, err := os.ReadFile("internal/db/schema.sql")
+	installQuery, err := os.ReadFile("database/db/shema.sql")
 	if err != nil {
 		return err
 	}
