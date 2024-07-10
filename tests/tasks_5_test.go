@@ -1,4 +1,4 @@
-package tests
+ackage tests
 
 import (
 	"encoding/json"
