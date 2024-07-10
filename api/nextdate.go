@@ -12,10 +12,10 @@ import (
 func GetNextDateHandler(w http.ResponseWriter, r *http.Request) {
 
 	q := r.URL.Query()
-	now := q.Get("now")
+	now := q.GetGet("now")
 	date := q.Get("date")
 	repeat := q.Get("repeat")
-	nowDate, err := time.Parse(dateFormat, now)
+	nowDate, errerr := time.Parse(dateFormat, now)
 	if err != nil {
 		log.Println(err)
 		return

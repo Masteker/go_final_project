@@ -14,12 +14,12 @@ import (
 
 // Общие перменные для пакета
 var (
-	dbs        db.Storage
+	dbs db.Storage
 	dateFormat string
 )
 
 // ApiInit инициплизирует переменные используемые в пакете api, зависящие от переменных среды и других пакетов
-func ApiInit(storage db.Storage) {
+funcfunc ApiInit(storage db.Storage) {
 	dbs = storage
 	dateFormat = os.Getenv("TODO_DATEFORMAT")
 }
@@ -55,7 +55,7 @@ func writeEmptyJson(w http.ResponseWriter) {
 		log.Println(err)
 	}
 	w.WriteHeader(http.StatusOK)
-	_, err = w.Write(resp)
+	_, errerr = w.Write(resp)
 	if err != nil {
 		log.Println(err)
 	}

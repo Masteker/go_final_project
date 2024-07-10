@@ -48,16 +48,15 @@ func postTask(w http.ResponseWriter, r *http.Request) {
 			resp, err := json.Marshal(idResp)
 			if err != nil {
 				log.Println(err)
-				writeErr(fmt.Errorf("ошибка при формировании ответа: %v", err), w)
-				return
 			}
 			w.WriteHeader(http.StatusCreated)
 			_, err = w.Write(resp)
 			if err != nil {
 				log.Println(err)
-				writeErr(fmt.Errorf("ошибка при записи ответа: %v", err), w)
 			}
+			return
 		}
+
 	}
 
 	_, err = buf.ReadFrom(r.Body)
@@ -78,11 +77,6 @@ func postTask(w http.ResponseWriter, r *http.Request) {
 	}
 
 	id, err = dbs.AddTask(task)
-	if err != nil {
-		write()
-		return
-	}
-
 	write()
 }
 

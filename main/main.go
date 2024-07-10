@@ -61,7 +61,7 @@ func main() {
 	r.Get("/api/nextdate", api.GetNextDateHandler)
 	r.Get("/api/tasks", auth.Auth(api.GetTasksHandler))
 	r.Post("/api/task/done", auth.Auth(api.PostTaskDoneHandler))
-	r.Post("/api/signin", auth.Auth(api.PostSigninHandler))
+	r.Post("/api/sign", auth.Auth(api.PostSigninHandler))
 	r.Handle("/api/task", auth.Auth(api.TaskHandler))
 
 	log.Printf("Server running on %s\n", port)

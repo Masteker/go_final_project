@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	nd "github.com/Masteker/go_final_project/database/nextdate"
+	nd"github.com/Masteker/go_final_project/database/nextdate"
 )
 
 type Task struct {
