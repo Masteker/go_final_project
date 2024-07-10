@@ -20,6 +20,11 @@ var (
 // NextDate возвращает дату и ошибку, исходя из правил указанных в repeat.
 func NextDate(nowArg time.Time, date string, repeat string) (string, error) {
 	// Если dateFormat ещё не инициализирована, берём её из .env файла
+	if len(dateFormat) == 0 {
+		dateFormat = os.Getenv("TODO_DATEFORMAT")
+	}
+
+	var err error
 
 	if repeat == "" {
 		return "", fmt.Errorf("пустая строка в repeat")
