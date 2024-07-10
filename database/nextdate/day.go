@@ -7,7 +7,7 @@ import (
 
 // CalculateNextDateAfterDays возвращает следующую дату, учитывая количество дней.
 func CalculateNextDateAfterDays(daysCode string) (string, error) {
-	days, err := strconv.Atoi(code)
+	days, err := strconv.Atoi(daysCode)
 	if err != nil {
 		return "", err
 	}
