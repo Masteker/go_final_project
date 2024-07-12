@@ -2,7 +2,7 @@ package task
 
 import (
 	"fmt"
-	"go_final_project/internal/nDate"
+	"github.com/Masteker/go_final_project/internal/nDate"
 	"strconv"
 	"strings"
 	"time"

@@ -2,7 +2,7 @@ package handlers
 
 import (
 	"fmt"
-	"go_final_project/internal/modelsAndService"
+	"github.com/Masteker/go_final_project/internal/modelsAndService"
 	"net/http"
 	"strconv"
 	"sync"

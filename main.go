@@ -3,11 +3,11 @@ package main
 import (
 	"database/sql"
 	"fmt"
-	"go_final_project/internal/checkers"
-	"go_final_project/internal/handlers"
-	"go_final_project/internal/modelsAndService"
-	"go_final_project/internal/modelsAndService/store"
-	mid "go_final_project/middleware"
+	"github.com/Masteker/go_final_project/internal/checkers"
+	"github.com/Masteker/go_final_project/internal/handlers"
+	"github.com/Masteker/go_final_project/internal/modelsAndService"
+	"github.com/Masteker/go_final_project/internal/modelsAndService/store"
+	mid "github.com/Masteker/go_final_project/middleware"
 	"log"
 	"net/http"
 

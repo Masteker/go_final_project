@@ -2,7 +2,7 @@ package handlers
 
 import (
 	"fmt"
-	"go_final_project/internal/nDate"
+	"github.com/Masteker/go_final_project/internal/nDate"
 	"net/http"
 	"time"
 )

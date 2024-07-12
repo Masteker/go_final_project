@@ -1,9 +1,9 @@
 package service
 
 import (
-	"go_final_project/internal/modelsAndService/store"
-	"go_final_project/internal/modelsAndService/store/task"
-	"go_final_project/internal/nDate"
+	"github.com/Masteker/go_final_project/internal/modelsAndService/store"
+	"github.com/Masteker/go_final_project/internal/modelsAndService/store/task"
+	"github.com/Masteker/go_final_project/internal/nDate"
 	"strconv"
 	"strings"
 	"time"

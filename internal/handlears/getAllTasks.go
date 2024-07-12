@@ -4,7 +4,7 @@ package handlers
 
 import (
 	"encoding/json"
-	"go_final_project/internal/modelsAndService/store/task"
+	"github.com/Masteker/go_final_project/internal/modelsAndService/store/task"
 	"net/http"
 
 	_ "modernc.org/sqlite"
