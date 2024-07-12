@@ -1,9 +1,0 @@
-services:
-  server:
-    build: 
-      context: ./
-      dockerfile: ./Dockerfile
-    env_file:
-      - "./.env"
-    ports:
-      - "${TODO_PORT}:${TODO_PORT}"     
