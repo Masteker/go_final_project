@@ -3,7 +3,7 @@ package handlers
 import (
 	"encoding/json"
 	"fmt"
-	"go_final_project/internal/models&service/store/task"
+	"go_final_project/internal/modelsAndService/store/task"
 	"net/http"
 	"strconv"
 

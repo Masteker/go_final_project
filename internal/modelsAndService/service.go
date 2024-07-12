@@ -1,8 +1,8 @@
 package service
 
 import (
-	"go_final_project/internal/models&service/store"
-	"go_final_project/internal/models&service/store/task"
+	"go_final_project/internal/modelsAndService/store"
+	"go_final_project/internal/modelsAndService/store/task"
 	"go_final_project/internal/nDate"
 	"strconv"
 	"strings"

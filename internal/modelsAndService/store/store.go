@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"errors"
 	"fmt"
-	"go_final_project/internal/models&service/store/task"
+	"go_final_project/internal/modelsAndService/store/task"
 	"time"
 )
 
