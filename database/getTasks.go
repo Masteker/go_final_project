@@ -16,8 +16,8 @@ func GetTasks(db *sqlx.DB, search string, limit int) ([]models.Task, error) {
 	// Убираем лишние пробелы в поисковой строке
 	search = strings.TrimSpace(search)
 	if search != "" {
-		// Проверяем, является ли поисковая строка датой в формате "01.01.2024"
-		if searchDate, err := time.Parse("01.01.2024", search); err == nil {
+		// Проверяем, является ли поисковая строка датой в формате "02.01.2006"
+		if searchDate, err := time.Parse("02.01.2006", search); err == nil {
 			searchDateStr := searchDate.Format(tasks.FormatDate)
 			rows, err = db.NamedQuery(`SELECT id, date, title, comment, repeat FROM scheduler WHERE date = :searchDate ORDER BY date LIMIT :limit`, map[string]interface{}{
 				"searchDate": searchDateStr,
